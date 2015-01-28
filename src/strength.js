@@ -65,17 +65,17 @@
                 var thismeter = $('div[data-meter="'+thisid+'"]');
                     if (total <= 1) {
                    thismeter.removeClass();
-                   thismeter.addClass('veryweak').html('very weak');
+                   thismeter.addClass('veryweak').html('<p>Strength: very weak</p>');
                 } else if (total == 2){
                     thismeter.removeClass();
-                   thismeter.addClass('weak').html('weak');
+                   thismeter.addClass('weak').html('<p>Strength: weak</p>');
                 } else if(total == 3){
                     thismeter.removeClass();
-                   thismeter.addClass('medium').html('medium');
+                   thismeter.addClass('medium').html('<p>Strength: medium</p>');
 
                 } else {
                      thismeter.removeClass();
-                   thismeter.addClass('strong').html('strong');
+                   thismeter.addClass('strong').html('<p>Strength: strong</p>');
                 }
                 
                 if (total == -1) { thismeter.removeClass().html('Strength'); }
